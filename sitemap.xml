@@ -1,375 +1,383 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  ═══════════════════════════════════════════════  -->
-<!--  Static Pages                                      -->
-<!--  ═══════════════════════════════════════════════  -->
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>daily</changefreq>
-<priority>1.0</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/all-tools</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/about</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/contact</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/privacy-policy</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.4</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/terms-of-service</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.4</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/resources</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.6</priority>
-</url>
-<!--  ═══════════════════════════════════════════════  -->
-<!--  Category Hubs (9)                                -->
-<!--  ═══════════════════════════════════════════════  -->
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/category/medication-management</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/category/caregiver-planning</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/category/senior-safety</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/category/dementia-care</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/category/long-term-care</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/category/home-care</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/category/elder-care-costs</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/category/caregiver-wellness</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/category/clinical-calculators</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<!--  ═══════════════════════════════════════════════  -->
-<!--  Tools (36)                                     -->
-<!--  ═══════════════════════════════════════════════  -->
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/medication-schedule-generator</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/caregiver-daily-planner</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/fall-risk-assessment</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/care-hours-calculator</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/nursing-home-cost-calculator</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/nursing-home-finder</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/medication-interaction-checker</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/emergency-contact-card</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/caregiver-burnout-assessment</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/caregiver-daily-checklist</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/weekly-care-schedule-planner</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/senior-morning-routine-builder</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/medication-reminder-schedule-maker</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/doctor-appointment-organizer</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/care-tasks-priority-planner</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/night-care-routine-planner</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/pill-reminder-schedule-generator</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/medication-refill-tracker</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/bmi-calculator</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/body-surface-area</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/creatinine-clearance</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/egfr-mdrd</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/ideal-body-weight</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/mean-arterial-pressure</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/corrected-calcium</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/corrected-sodium</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/chads2-vasc-score</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/anion-gap-calculator</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/serum-osmolality</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/wells-dvt-score</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/pf-ratio-ards</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/ckd-stage-classifier</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/maintenance-fluids</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/ecg-heart-rate</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/pediatric-weight-estimate</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/tools/medical-report-generator</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<!--  ═══════════════════════════════════════════════  -->
-<!--  Guides & Articles (8)                        -->
-<!--  ═══════════════════════════════════════════════  -->
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/guides/tips-medication-compliance</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/guides/preventing-caregiver-burnout</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/guides/home-safety-fall-prevention</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/guides/medicaid-spend-down</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/guides/respite-care-funding</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/guides/dementia-communication</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/guides/nursing-home-cost-guide-2026</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://toolboxme.github.io/careverahealth/#/guides/cdc-steadi-fall-prevention-protocol</loc>
-<lastmod>2026-06-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- Static Pages                                     -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/all-tools</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/about</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/contact</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/privacy-policy</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/terms-of-service</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/resources</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- Category Hubs (9)                               -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/category/medication-management</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/category/caregiver-planning</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/category/senior-safety</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/category/dementia-care</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/category/long-term-care</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/category/home-care</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/category/elder-care-costs</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/category/caregiver-wellness</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/category/clinical-calculators</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- Tools (36)                                    -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/medication-schedule-generator</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/caregiver-daily-planner</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/fall-risk-assessment</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/care-hours-calculator</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/nursing-home-cost-calculator</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/nursing-home-finder</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/medication-interaction-checker</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/emergency-contact-card</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/caregiver-burnout-assessment</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/caregiver-daily-checklist</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/weekly-care-schedule-planner</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/senior-morning-routine-builder</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/medication-reminder-schedule-maker</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/doctor-appointment-organizer</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/care-tasks-priority-planner</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/night-care-routine-planner</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/pill-reminder-schedule-generator</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/medication-refill-tracker</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/bmi-calculator</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/body-surface-area</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/creatinine-clearance</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/egfr-mdrd</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/ideal-body-weight</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/mean-arterial-pressure</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/corrected-calcium</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/corrected-sodium</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/chads2-vasc-score</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/anion-gap-calculator</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/serum-osmolality</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/wells-dvt-score</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/pf-ratio-ards</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/ckd-stage-classifier</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/maintenance-fluids</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/ecg-heart-rate</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/pediatric-weight-estimate</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/tools/medical-report-generator</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- Guides & Articles (8)                       -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/guides/tips-medication-compliance</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/guides/preventing-caregiver-burnout</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/guides/home-safety-fall-prevention</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/guides/medicaid-spend-down</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/guides/respite-care-funding</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/guides/dementia-communication</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/guides/nursing-home-cost-guide-2026</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolboxme.github.io/careverahealth/guides/cdc-steadi-fall-prevention-protocol</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
