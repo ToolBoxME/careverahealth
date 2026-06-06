@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -636,13 +637,10 @@ window.onafterprint = function() { window.close(); };
 </body>
 </html>`;
 
-const pw = window.open("", "_blank", "width=900,height=750");
-pw.document.write(html);
-pw.document.close();
+_cvrOpenReport(html,'carevera-fall-risk-report.html');
 }
 
 function printPlannerShiftLog(tasks, mood, appetite, sleep, notes) {
-const pw = window.open('','_blank','width=900,height=700');
 const dateStr = new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
 const timeStr = new Date().toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit'});
 const formId  = 'CVR-' + Math.random().toString(36).substr(2,8).toUpperCase();
@@ -865,8 +863,25 @@ body{font-family:"Segoe UI",Arial,sans-serif;color:#2c3a4a;background:#fff;}
 <script>window.onload=function(){window.print();window.onafterprint=function(){window.close();};};<\/script>
 </body></html>`;
 
-pw.document.write(html);
-pw.document.close();
+_cvrOpenReport(html,'carevera-shift-log.html');
+}
+
+function _cvrOpenReport(html, filename) {
+  var fn = filename || 'carevera-report.html';
+  var sc = '<script>function _cvrdl(){var b=new Blob([document.documentElement.outerHTML],{type:"text/html"});var a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="'+fn+'";document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(a.href);}window.onload=null;<\/script>';
+  var tb = '<style>@media print{#_cvr_tb,#_cvr_sp{display:none!important}}<\/style>'
+    + '<div id="_cvr_tb" style="position:fixed;top:0;left:0;right:0;z-index:99999;background:#0f766e;color:#fff;display:flex;gap:8px;align-items:center;padding:9px 16px;font-family:Arial,sans-serif;font-size:13px;box-shadow:0 2px 8px rgba(0,0,0,.25);">'
+    + '<span style="font-weight:800;flex:1;letter-spacing:.3px;">Carevera</span>'
+    + '<button onclick="window.print()" style="background:#fff;color:#0f766e;border:none;border-radius:4px;padding:5px 14px;font-weight:700;cursor:pointer;font-size:13px;">Print</button>'
+    + '<button onclick="_cvrdl()" style="background:#34d399;color:#134e4a;border:none;border-radius:4px;padding:5px 14px;font-weight:700;cursor:pointer;font-size:13px;">Download HTML</button>'
+    + '<button onclick="window.close()" style="background:rgba(255,255,255,.18);color:#fff;border:none;border-radius:4px;padding:5px 11px;cursor:pointer;font-size:13px;">X<\/button>'
+    + '<\/div><div id="_cvr_sp" style="height:46px"><\/div>';
+  var mod = html.indexOf('</body>') !== -1
+    ? html.replace('</body>', sc + tb + '</body>')
+    : html + sc + tb;
+  var pw = window.open('','_blank','width=920,height=720');
+  pw.document.write(mod);
+  pw.document.close();
 }
 
 /*************************************************************************
@@ -2653,9 +2668,7 @@ const html = `<!DOCTYPE html>
 </body>
 </html>`;
 
-const pw = window.open("", "_blank", "width=900,height=650");
-pw.document.write(html);
-pw.document.close();
+_cvrOpenReport(html,'carevera-medication-schedule.html');
 });
 }
 },
@@ -4076,17 +4089,19 @@ ${alerts.map(a => `
 checkboxes.forEach(cb => cb.addEventListener("change", audit));
 
 printBtn.addEventListener("click", () => {
-const printWindow = window.open("", "_blank");
-printWindow.document.write('<html><head><title>Prescription Interaction Report</title><style>');printWindow.document.write('body{font-family:sans-serif;padding:2.5rem;color:#333;line-height:1.5;}');printWindow.document.write('h1{border-bottom:3px solid #16a085;padding-bottom:0.5rem;color:#16a085;font-size:1.6rem;}');printWindow.document.write('.report-box{border:2px solid #e2e8f0;padding:1.5rem;border-radius:6px;margin:1.5rem 0;background:#f8fafc;}');printWindow.document.write('</style></head><body>');
-printWindow.document.write('<h1>Prescription Polypharmacy Audit Report</h1>');
-printWindow.document.write('<p>Generated on: ' + new Date().toLocaleDateString() + '</p>');
-printWindow.document.write('<div class="report-box">');
-printWindow.document.write(reportOutput.innerHTML);
-printWindow.document.write('</div>');
-printWindow.document.write('<p style="font-size:0.75rem; color:#666; margin-top:4rem; border-top:1px solid #ccc; padding-top:0.5rem;">Carevera Safe-Proof Screening Suite. This does not constitute professional medical advice.</p>');
-printWindow.document.write('</body></html>');
-printWindow.document.close();
-printWindow.print();
+const _html = '<html><head><title>Prescription Interaction Report</title><style>'
+  + 'body{font-family:sans-serif;padding:2.5rem;color:#333;line-height:1.5;}'
+  + 'h1{border-bottom:3px solid #16a085;padding-bottom:0.5rem;color:#16a085;font-size:1.6rem;}'
+  + '.report-box{border:2px solid #e2e8f0;padding:1.5rem;border-radius:6px;margin:1.5rem 0;background:#f8fafc;}'
+  + '</style></head><body>'
+  + '<h1>Prescription Polypharmacy Audit Report</h1>'
+  + '<p>Generated on: ' + new Date().toLocaleDateString() + '</p>'
+  + '<div class="report-box">'
+  + reportOutput.innerHTML
+  + '</div>'
+  + '<p style="font-size:0.75rem; color:#666; margin-top:4rem; border-top:1px solid #ccc; padding-top:0.5rem;">Carevera Safe-Proof Screening Suite. This does not constitute professional medical advice.</p>'
+  + '</body></html>';
+_cvrOpenReport(_html,'carevera-interaction-report.html');
 });
 }
 };
@@ -4250,34 +4265,36 @@ const pDoc = container.querySelector("#em-doc-name").value;
 const pDocP = container.querySelector("#em-doc-phone").value;
 const pHosp = container.querySelector("#em-hospital").value;
 
-const printWindow = window.open("", "_blank");
-printWindow.document.write('<html><head><title>Print Emergency Wallet Card</title><style>');printWindow.document.write('body{font-family:sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:80vh;color:#333;}');printWindow.document.write('.card-mesh{width:340px;border:2px dashed #999;padding:12px;margin-bottom:2rem;background:white;}');printWindow.document.write('.card-front{border:3px solid #e53e3e;border-radius:6px;padding:10px;margin-bottom:12px;min-height:160px;display:flex;flex-direction:column;justify-content:space-between;}');printWindow.document.write('.card-back{border:3px solid #2b6cb0;border-radius:6px;padding:10px;min-height:160px;display:flex;flex-direction:column;justify-content:space-between;}');printWindow.document.write('.title-f{font-size:1.15rem;font-weight:900;color:#e53e3e;border-bottom:1px solid #fc8181;padding-bottom:3px;margin-bottom:8px;}');printWindow.document.write('.title-b{font-size:1rem;font-weight:900;color:#2b6cb0;border-bottom:1px solid #90cdf4;padding-bottom:3px;margin-bottom:8px;}');printWindow.document.write('.info-row{font-size:0.8rem;margin-bottom:3px;}');printWindow.document.write('</style></head><body>');
-printWindow.document.write('<h2 style="text-align:center;">INSTRUCTIONS: Print on heavy cardstock, cut along dotted line, fold in half, and laminate.</h2>');
-
-printWindow.document.write('<div class="card-mesh">');
-
-printWindow.document.write('<div class="card-front">');
-printWindow.document.write('<div class="title-f">🚨 EMERGENCY MEDICAL CARD</div>');
-printWindow.document.write('<div class="info-row">Patient: <strong style="font-size:0.9rem;">' + pName + '</strong></div>');
-printWindow.document.write('<div class="info-row">D.O.B: <strong>' + pDob + '</strong></div>');
-printWindow.document.write('<div class="info-row">⚠️ Allergies: <span style="background:#fed7d7; color:#c53030; font-weight:700; padding:1px 3px;">' + pAll + '</span></div>');
-printWindow.document.write('<div class="info-row">🩺 Conditions: <strong>' + pCond + '</strong></div>');
-printWindow.document.write('<div style="font-size:0.6rem; color:#aaa; text-align:center; margin-top:8px;">FOLD LINE</div>');
-printWindow.document.write('</div>');
-
-printWindow.document.write('<div class="card-back">');
-printWindow.document.write('<div class="title-b">📞 CONTACT COORDINATES</div>');
-printWindow.document.write('<div class="info-row">Primary Caregiver: <strong>' + pCg + '</strong></div>');
-printWindow.document.write('<div class="info-row">Phone: <strong style="color:#2b6cb0;">' + pCgP + '</strong></div>');
-printWindow.document.write('<div class="info-row">Primary Doctor: <strong>' + pDoc + '</strong></div>');
-printWindow.document.write('<div class="info-row">Doctor Phone: <strong>' + pDocP + '</strong></div>');
-printWindow.document.write('<div class="info-row">Preferred ER: <strong>' + pHosp + '</strong></div>');
-printWindow.document.write('</div>');
-
-printWindow.document.write('</div>');
-printWindow.document.write('</body></html>');
-printWindow.document.close();
-printWindow.print();
+const _html = '<html><head><title>Print Emergency Wallet Card</title><style>'
+  + 'body{font-family:sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:80vh;color:#333;}'
+  + '.card-mesh{width:340px;border:2px dashed #999;padding:12px;margin-bottom:2rem;background:white;}'
+  + '.card-front{border:3px solid #e53e3e;border-radius:6px;padding:10px;margin-bottom:12px;min-height:160px;display:flex;flex-direction:column;justify-content:space-between;}'
+  + '.card-back{border:3px solid #2b6cb0;border-radius:6px;padding:10px;min-height:160px;display:flex;flex-direction:column;justify-content:space-between;}'
+  + '.title-f{font-size:1.15rem;font-weight:900;color:#e53e3e;border-bottom:1px solid #fc8181;padding-bottom:3px;margin-bottom:8px;}'
+  + '.title-b{font-size:1rem;font-weight:900;color:#2b6cb0;border-bottom:1px solid #90cdf4;padding-bottom:3px;margin-bottom:8px;}'
+  + '.info-row{font-size:0.8rem;margin-bottom:3px;}'
+  + '</style></head><body>'
+  + '<h2 style="text-align:center;">INSTRUCTIONS: Print on heavy cardstock, cut along dotted line, fold in half, and laminate.</h2>'
+  + '<div class="card-mesh">'
+  + '<div class="card-front">'
+  + '<div class="title-f">🚨 EMERGENCY MEDICAL CARD</div>'
+  + '<div class="info-row">Patient: <strong style="font-size:0.9rem;">' + pName + '</strong></div>'
+  + '<div class="info-row">D.O.B: <strong>' + pDob + '</strong></div>'
+  + '<div class="info-row">⚠️ Allergies: <span style="background:#fed7d7; color:#c53030; font-weight:700; padding:1px 3px;">' + pAll + '</span></div>'
+  + '<div class="info-row">🩺 Conditions: <strong>' + pCond + '</strong></div>'
+  + '<div style="font-size:0.6rem; color:#aaa; text-align:center; margin-top:8px;">FOLD LINE</div>'
+  + '</div>'
+  + '<div class="card-back">'
+  + '<div class="title-b">📞 CONTACT COORDINATES</div>'
+  + '<div class="info-row">Primary Caregiver: <strong>' + pCg + '</strong></div>'
+  + '<div class="info-row">Phone: <strong style="color:#2b6cb0;">' + pCgP + '</strong></div>'
+  + '<div class="info-row">Primary Doctor: <strong>' + pDoc + '</strong></div>'
+  + '<div class="info-row">Doctor Phone: <strong>' + pDocP + '</strong></div>'
+  + '<div class="info-row">Preferred ER: <strong>' + pHosp + '</strong></div>'
+  + '</div>'
+  + '</div>'
+  + '</body></html>';
+_cvrOpenReport(_html,'carevera-emergency-card.html');
 });
 }
 };
@@ -4373,7 +4390,7 @@ const html='<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Daily Caregi
 +'<div><div>Notes / Incidents</div><div style="border:1px solid #cbd5e0;width:300px;height:44px;margin-top:7px;border-radius:4px;padding:4px;font-size:8pt;color:#a0aec0;"></div></div></div>'
 +'<div class="footer">Carevera Caregiver Tools &bull; carevera1.netlify.app &bull; All data processed locally.</div>'
 +'<script>window.onload=function(){window.print();window.onafterprint=function(){window.close();};};<\/script></body></html>';
-const pw=window.open('','_blank','width=820,height=680');pw.document.write(html);pw.document.close();
+_cvrOpenReport(html,'carevera-report.html');
 };
 }
 };
@@ -4444,7 +4461,7 @@ const html='<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Weekly Care 
 +'<table><thead><tr><th style="padding:4px 6px;text-align:left;font-size:7.5pt;font-weight:700;background:#e8f8f5;color:#16a085;border:1px solid #b2dfdb;width:70px;">Time</th>'+thCells+'</tr></thead><tbody>'+rows+'</tbody></table>'
 +'<div class="footer">Carevera &bull; carevera1.netlify.app &bull; Review every Sunday.</div>'
 +'<script>window.onload=function(){window.print();window.onafterprint=function(){window.close();};};<\/script></body></html>';
-const pw=window.open('','_blank','width=1000,height=680');pw.document.write(html);pw.document.close();
+_cvrOpenReport(html,'carevera-report.html');
 };
 }
 };
@@ -4551,7 +4568,7 @@ const html='<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Morning Rout
 +'</tr></thead><tbody>'+rows+'</tbody></table>'
 +'<div class="footer">Carevera &bull; carevera1.netlify.app &bull; Review when care plan changes.</div>'
 +'<script>window.onload=function(){window.print();window.onafterprint=function(){window.close();};};<\/script></body></html>';
-const pw=window.open('','_blank','width=820,height=680');pw.document.write(html);pw.document.close();
+_cvrOpenReport(html,'carevera-report.html');
 };
 }
 };
@@ -4644,7 +4661,7 @@ const html='<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Medication R
 +critBlock+slotBlocks
 +'<div class="footer">Carevera &bull; carevera1.netlify.app &bull; Always verify with your pharmacist or physician.</div>'
 +'<script>window.onload=function(){window.print();window.onafterprint=function(){window.close();};};<\/script></body></html>';
-const pw=window.open('','_blank','width=820,height=680');pw.document.write(html);pw.document.close();
+_cvrOpenReport(html,'carevera-report.html');
 };
 }
 };
@@ -4720,7 +4737,7 @@ const html='<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Appointment 
 +'<div class="grid">'+fBlock('Pre-Visit Questions',appt.questions)+fBlock('Symptoms Reported',appt.symptoms)+fBlock("Doctor's Instructions",appt.instructions)+fBlock('Post-Visit Action Items',appt.actions)+'</div>'
 +'<div class="footer">Carevera &bull; carevera1.netlify.app &bull; Share this summary with all involved caregivers.</div>'
 +'<script>window.onload=function(){window.print();window.onafterprint=function(){window.close();};};<\/script></body></html>';
-const pw=window.open('','_blank','width=820,height=680');pw.document.write(html);pw.document.close();
+_cvrOpenReport(html,'carevera-report.html');
 };
 detail.querySelector('.dao-delete-btn').onclick=()=>{
 this.appointments=this.appointments.filter(a=>a.id!==appt.id);this.activeId=null;
@@ -4843,7 +4860,7 @@ const html='<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Care Tasks P
 +'<strong>Legend:</strong> Tier 1 = Immediate &bull; Tier 2 = Schedule &bull; Tier 3 = Delegate to others &bull; Tier 4 = Defer</div>'
 +'<div class="footer">Carevera &bull; carevera1.netlify.app &bull; Review and update weekly.</div>'
 +'<script>window.onload=function(){window.print();window.onafterprint=function(){window.close();};};<\/script></body></html>';
-const pw=window.open('','_blank','width=820,height=680');pw.document.write(html);pw.document.close();
+_cvrOpenReport(html,'carevera-report.html');
 };
 }
 };
@@ -4967,7 +4984,7 @@ const html='<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Night Care R
 +'<tbody>'+rows+'</tbody></table>'+handover
 +'<div class="footer">Carevera &bull; carevera1.netlify.app &bull; Confirm pathway lighting before leaving room.</div>'
 +'<script>window.onload=function(){window.print();window.onafterprint=function(){window.close();};};<\/script></body></html>';
-const pw=window.open('','_blank','width=820,height=680');pw.document.write(html);pw.document.close();
+_cvrOpenReport(html,'carevera-report.html');
 };
 }
 };
@@ -5071,7 +5088,7 @@ const html='<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Pill Reminde
 +critBlock+slotBlocks
 +'<div class="footer">Carevera &bull; carevera1.netlify.app &bull; Pair with weekly pill organizer. Verify with pharmacist.</div>'
 +'<script>window.onload=function(){window.print();window.onafterprint=function(){window.close();};};<\/script></body></html>';
-const pw=window.open('','_blank','width=820,height=680');pw.document.write(html);pw.document.close();
+_cvrOpenReport(html,'carevera-report.html');
 };
 }
 };
@@ -5182,7 +5199,7 @@ const html='<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Medication R
 +'<strong style="color:#7b5e00;">Action Required:</strong> '+needRefill.map(m=>m.name).join(', ')+' need immediate refill attention.</div>':'')
 +'<div class="footer">Carevera &bull; carevera1.netlify.app &bull; Contact prescribing physician 5-7 days before controlled substance refill dates.</div>'
 +'<script>window.onload=function(){window.print();window.onafterprint=function(){window.close();};};<\/script></body></html>';
-const pw=window.open('','_blank','width=820,height=680');pw.document.write(html);pw.document.close();
+_cvrOpenReport(html,'carevera-report.html');
 };
 }
 };
@@ -6522,10 +6539,7 @@ if (!area || area.style.display === 'none') {
 self.toast('Click "Preview Report" first');
 return;
 }
-const pw = window.open('', '_blank', 'width=820,height=680');
-pw.document.write('<html><head><title>Medical Report</title><style>body{font-family:serif;padding:2cm;color:#000;}</style></head><body>' + area.innerHTML + '</body></html>');
-pw.document.close();
-setTimeout(() => { pw.print(); }, 400);
+_cvrOpenReport('<html><head><title>Medical Report</title><style>body{font-family:serif;padding:2cm;color:#000;}</style></head><body>' + area.innerHTML + '</body></html>','carevera-medical-report.html');
 });
 attachBtn('mtb-rpt-clear', () => {
 container.querySelectorAll('#mtb-rpt-preview-area').forEach(el => { el.style.display = 'none'; el.innerHTML = ''; });
@@ -7583,10 +7597,7 @@ root.innerHTML = `
 <header class="header-bar">
 <div class="header-inner">
 <a href="#/" class="logo-link">
-<svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-</svg>
-<span>Care<span style="color:var(--color-primary); font-weight: 900;">vera</span></span>
+<img src="logo.svg" alt="Carevera" style="height:44px;width:auto;display:block;">
 </a>
 
 <nav class="nav-links">
