@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://toolboxme.github.io/careverahealth/sitemap.xml
+Sitemap: https://careverahealth.fit/sitemap.xml
